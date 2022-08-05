@@ -16,54 +16,44 @@ Digital Twin primitive: composable self-contained for sovereign digital life
     * This first grant application supports a proof of concept platform development to meet the technological and business needs of _Digital Twin_
 
 
-# **Proof of Concept**
+## Proof of Concept
+
+- Building first primitives
+    - Implement first functionalities inside Domain Specific Language
+        - Find a digital twin by his twin_id (or handle)
+            - Request connection permission 
+                - Approve
+                - Create trusted circles with pairs of digital twins 
+                - Deny permission 
+                - Revoke permission 
+        - Start message chat with another digital twin 
+            - Send a text message (no interface)
+
+- Expand and solidify phase (primitive DSL) 
+    - _Connect with different blockchains through the digital twin _
+    - _Exchange files using the decentralized grid _
+    - _Permission access layer to specific files inside my cloud storage_
+    - _Interface UI/UX_
+    - _Deploy production Digital Twin on the decentralized grid _
+    - _The first production uses cases (alternative zoom, WhatsApp, storage)
+
+- Build dAPP to set us free from big corporation services 
+    - Alternative to Spotify 
+    - Alternative Airbnb 
+    - Alternative Uber eats
+    - Alternative TicketMaster
 
 
-
-1. Building first primitives
-    1. Implement first functionalities inside Domain Specific Language
-        1. Find a digital twin by his twin_id (or handle)
-            1. Request connection permission 
-                1. Approve
-                2. Create trusted circles with pairs of digital twins 
-                3. Deny permission 
-                4. Revoke permission 
-        2. Start message chat with another digital twin 
-            2. Send a text message (no interface) \
-
-2. Expand and solidify phase (primitive DSL) 
-    2. _Connect with different blockchains through the digital twin _
-    3. _Exchange files using the decentralized grid _
-    4. _Permission access layer to specific files inside my cloud storage_
-    5. _Interface UI/UX_
-    6. _Deploy production Digital Twin on the decentralized grid _
-    7. _The first production uses cases (alternative zoom, WhatsApp, storage) \
-_
-3. Build dAPP to set us free from big corporation services 
-    8. Alternative to Spotify 
-    9. Alternative Airbnb 
-    10. Alternative Uber eats
-    11. Alternative TicketMaster
-
-
-# **Project Scope**
+## Project Scope
 
 The scope of this grant refers to item 1 described above. The same enrollment process will be done when the previous one is finished. The aiming goal is to complete all the three steps of development of the technology itself to achieve its full potential 
 
 All the specific milestone described and detailed below refers again to proof of concept item 1
 
 
+# Milestone 1: Build and Setup the first primitive implementation
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image1.png "image_tooltip")
-
-
-
-## Milestone 1: Build and Setup the first primitive implementation
-
-Chosen technologies: \
+## Chosen technologies:
 
 
 ThreeFold is a reliable system that guarantees that data can never be lost or corrupted. The local instance of the internet would always be running, even though the public internet goes down. 
@@ -71,25 +61,21 @@ ThreeFold is a reliable system that guarantees that data can never be lost or co
 There is a **considerable shift to have guaranteed** that the most remote community would have access to every fundamental resource in terms of access and connectivity. We are very proud of collaborating with ThreeFold, which is building an entire grid to provide all those benefits.
 
 
-    **Threefold Grid3**
-
-
+### Threefold Grid3
 
 * The infrastructure is the network of 3Node that the digital twin will be hosted on.
 
-    **Planetary Network**
+### Planetary Network
 
 * Network of twins and nodes on TF Grid, used for finding and sending messages to twins via RMB.
 * Uses YGGDRASIL _(Is an overlay network implementation of a new routing scheme for mesh networks. It is designed to be a future-proof decentralized alternative to the structured routing protocols commonly used today on the Internet and other networks.) Repository: https://github.com/yggdrasil-network/yggdrasil-go_
 * Repository: https://github.com/threefoldtech/planetary_network
 
-    **Zero OS**
+### Zero OS
 
 * Repository: [https://github.com/threefoldtech/zos](https://github.com/threefoldtech/zos)
 
-**Reliable Message Bus**
-
-
+### Reliable Message Bus
 
 * Rust RMB Repository: [https://github.com/threefoldtech/rmb-rs](https://github.com/threefoldtech/rmb-rs) 
 * Rust RMB SDK Repository: [https://github.com/threefoldtech/rmb-sdk-rs](https://github.com/threefoldtech/rmb-sdk-rs) 
