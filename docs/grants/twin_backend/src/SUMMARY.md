@@ -11,6 +11,7 @@
     - [Milestone 1](ms1.md)
     - [Milestone 2](ms2.md)
     - [Milestone 3](ms3.md)
+    - [License](license.md)
 - [Benefit](benefit_devxdao.md)
 - [Team](team/team.md) 
     - [Gava](team/gava.md) 

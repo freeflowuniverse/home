@@ -7,7 +7,7 @@ This milestone is all about Security, Redundancy and Scalability
 
 Its important in such a system we finetune the components to make sure that minimal required perofrmance and scale can be achieve.
 
-## Acceptance criteria for milestone 1:
+## Acceptance criteria for milestone 2:
 
 * [ ] performance / Scalability
     * [ ] 1000 twins can be deployed < 2h

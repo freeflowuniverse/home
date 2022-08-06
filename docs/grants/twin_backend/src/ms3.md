@@ -18,6 +18,8 @@ graph TD
 
 ```
 
+The pinned data can belong to 1 user or multiple users at once.
+
 ## Acceptance criteria for milestone 1:
 
 * [ ] basic features
