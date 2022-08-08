@@ -34,7 +34,7 @@ jobs:
     - name: Generate MDBOOK
       run: |
         cd docs/grants/twin_backend
-        bash run.sh
+        # bash run.sh
         git worktree add gh-pages
         git config user.name "Deploy from CI"
         git config user.email ""
