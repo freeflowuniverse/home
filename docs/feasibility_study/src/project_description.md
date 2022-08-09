@@ -4,14 +4,9 @@ The Tanzania Sovereign Internet Platform (“TSIP”) as envisaged in the memora
 
 The make up of such an ecosystem includes:
 
+![ecosystem](./img/ecosystem.png)
 
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![drawing](https://docs.google.com/drawings/d/12345/export/png)
-
-**TSIP Grid (powered by Threefold) **
+**TSIP Grid (powered by Threefold)**
 
 
 
@@ -19,9 +14,7 @@ The make up of such an ecosystem includes:
 * located entirely within Tanzania, providing national sovereignty over data and all associated revenue streams as well as security and immunity from disruption
 * the foundational layer of the TSIP ecosystem, powered by Threefold technology, providing the compute, storage and network resources, enabling FreeFlow Life and further digital services to empower the nation of Tanzania
 
-**FreeFlow Life **
-
-
+**FreeFlow Life**
 
 * the primary internet experience of TSIP giving every TZN citizen their digital life in one experience. 
 * a universally accessible digital platform through which Tanzanians can access improved alternatives to commonly used global communications, media and productivity software;

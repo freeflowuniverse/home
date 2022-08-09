@@ -1,25 +1,25 @@
-**UNITED REPUBLIC OF TANZANIA**
+**<p style="text-align: center;">UNITED REPUBLIC OF TANZANIA</p>**
 
 
+<div style="text-align: center;">
 
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+![alt_text](img/tanzania_flag.png "image_tooltip")
 
+</div>
 
-![alt_text](images/image1.png "image_tooltip")
+**<p style="text-align: center;">FEASIBILITY STUDY</p>**
 
+**<p style="text-align: center;">FOR</p>**
 
-**FEASIBILITY STUDY**
+**<p style="text-align: center;">TANZANIA SOVEREIGN INTERNET AND DIGITAL BACKBONE PLATFORM (“TSI”)</p>**
 
-**FOR**
+**<p style="text-align: center;">BETWEEN</p>**
 
-**<span style="text-decoration:underline;">T</span>ANZANIA  <span style="text-decoration:underline;">S</span>OVEREIGN <span style="text-decoration:underline;">I</span>NTERNET AND DIGITAL BACKBONE PLATFORM (“TSI”)**
+**<p style="text-align: center;">MINISTRY OF INFORMATION, COMMUNICATION and INFORMATION TECHNOLOGY</p>**
 
-**BETWEEN**
+**<p style="text-align: center;">AND</p>**
 
-**MINISTRY OF INFORMATION, COMMUNICATION and INFORMATION TECHNOLOGY**
+**<p style="text-align: center;">THREEFOLD NV</p>**
 
-**AND**
+**<p style="text-align: center;">AUGUST 2022</p>**
 
-**THREEFOLD NV **
-
-**AUGUST 2022**

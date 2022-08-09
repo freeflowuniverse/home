@@ -1,4 +1,4 @@
-* Executive Summary (include the WHY)
+## Executive Summary (include the WHY)
 
 
     * Internet to country
@@ -18,8 +18,8 @@ A sustainable digital transformation can only be achieved if it is founded on di
 
 Three initiatives will spearhead the realisation of Tanzania Digital Sovereignty and the unlocking of its Internet Economy 
 
-**Digitisation of Civil Services**: The objectives pursued here aim to offer citizens better access to public services and to speed up administrative procedures Focussed on , on the administrative gains made possible by digital technology, It covers the digitisation of administrative procedures and basic social services, the paperless management of financial flows (tokenization of civil services) and the training of the various segments of society in the use of technological tools. 
+**1. Digitisation of Civil Services:** The objectives pursued here aim to offer citizens better access to public services and to speed up administrative procedures Focussed on , on the administrative gains made possible by digital technology, It covers the digitisation of administrative procedures and basic social services, the paperless management of financial flows (tokenization of civil services) and the training of the various segments of society in the use of technological tools. 
 
-**Digitisation of Key Economic Sectors: **Increasing national wealth through the building of an innovation and start-up ecosystem looks at digitalising key sectors of Togo’s economy (logistics, trade, agriculture, etc.), creating support programmes for start-ups and using big data to help public and private sector decision-making processes.
+**2. Digitisation of Key Economic Sectors:** Increasing national wealth through the building of an innovation and start-up ecosystem looks at digitalising key sectors of Togo’s economy (logistics, trade, agriculture, etc.), creating support programmes for start-ups and using big data to help public and private sector decision-making processes.
 
-**Universal Access to Information:** Knowledge is power and ensuring every Tanzanian citizen has affordable access to the wealth of information made possible by the www is key in the empowerment of the Tanzanian population. 
+**3. Universal Access to Information:** Knowledge is power and ensuring every Tanzanian citizen has affordable access to the wealth of information made possible by the www is key in the empowerment of the Tanzanian population. 

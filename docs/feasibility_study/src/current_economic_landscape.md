@@ -1,7 +1,5 @@
 ### Current Economic Landscape {#current-economic-landscape}
 
-
-
 * The Economy of Tanzania in 2021  With an average real GDP growth rate of 6.3% over the past decade (2010-2019), 
 * Tanzania is among the fastest-growing economies in Africa and in the world. 
 * Yet, widespread poverty persists with 49 percent of Tanzania’s population living below the international extreme poverty line of $1.90 per day (World Bank, 2011)
@@ -12,13 +10,7 @@
     * followed by Industry and Construction (31.1%) 
     * Agriculture, Forestry and Fishing  (28.9%) 
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image3.png "image_tooltip")
-
+![Tanzania GDP](./img/tanzania_gdp.png "image_tooltip")
 
 Among Tanzania’s predominantly rural population (73 percent), economic growth has been limited. Inclusive, broad-based growth is hindered by low productivity growth in labour-intensive sectors like agriculture, which employs 77 percent of working age adults. The agriculture sector grew just 4 percent per year over the past decade.
 

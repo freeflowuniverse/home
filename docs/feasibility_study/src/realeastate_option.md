@@ -19,9 +19,15 @@ Categories:
 3. Concrete and brick  Villa / Home  (individually owned)
 4. Other
 
-More detailed information on the rollout is formulated
+More detailed information on the rollout is formulated as follows:
 
+| Priority / Phase | Private/Public sector sites |Community sites |
+|-------------------------|----------------------------|-------------| 
+| 1 | Telco (National and International) sites | Edge DC sites |
+| 2 |Goverment sites, Colleges / School University sites | |
+| 3 | Airports / Seaports |  Homes |
 
+Alternative table definition (choose - above or below)
 <table>
   <tr>
    <td><strong>Priority / Phase</strong>
