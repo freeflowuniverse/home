@@ -6,7 +6,7 @@ Create the infrastructure layer for an upgraded internet:
 - A more reliable internet, one which can meet the challenges of the future 
 (climate change issues, possibility of unrest, financial crisis, …). 
 - A more sustainable internet, using a lot less energy
-- A more safe internet
+- A more safe internet.
 - An internet where we can be the center of our digital life with more security, less costs, no middleman, …
 
 Providing for
