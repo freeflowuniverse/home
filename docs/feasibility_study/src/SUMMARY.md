@@ -1,5 +1,30 @@
 # Summary
 
+- [Frontpage](./readme.md)
+- [Executive Summary (include the WHY)](./executive_summary.md)
+- [Description of the Project](./project_description.md)
+- [Market Assessment and Strategy](./market_assessment_and_strategy.md)
+  - [Current Economic Landscape](./current_economic_landscape.md)
+  - [Economic Empowerment](./economic_empowerment.md)
+  - [Social Impact](./social_impact.md)
+  - [Methodology](./methodology.md)
+  - [Market Feasibility](./market_feasibility.md)
+    - [Market Feasibility Study Criteria](./market_feasibility_criteria.md)
+    - [Market Feasibility Study Results](./market_feasibility_results.md)
+- [Technology Considerations](./technology_considerations.md)
+  - [Requirements](./technical_requirements.md)
+    - [Population density](./requirements_population_density.md)
+    - [Power availability and reliability](./requirements_power.md)
+    - [Composite overview of areas of interest](./requirements_composite.md)
+    - [Real estate availability and reliability](./realestate_options.md)
+  - [Deployment types](./deployment_types.md)
+- [Operational Feasibility](./operational_feasibility.md)
+- [Financial Feasibility](./readme.md)
+- [Legal/Regulatory Compliance](./legal_compliance.md)
+- [Risk Factors & Mitigation](./risk_factors.md)
+- [Schedule](./schedule.md)
+
+<!--
 - [Intro](./intro.md)
 - [Mission](./mission.md)
 - [Purpose](purpose.md)
@@ -17,7 +42,7 @@
     - [Gava](team/gava.md) 
     - [Kristof](team/kristof.md)
 - [Conclusion](conclusion.md)
-<!-- - [V API](v/readme.md)
+- [V API](v/readme.md)
   - [Crypto](v/crypto.md)
   - [TFGrid](v/tfgrid.md)- 
   - [Core](v/twinactions.md) -->

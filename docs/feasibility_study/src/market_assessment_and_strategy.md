@@ -1,0 +1,1 @@
+## Market Assessment and Strategy {#market-assessment-and-strategy}
