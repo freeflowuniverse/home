@@ -1,28 +1,25 @@
 
-# Milestone 2: Security, Redundancy and Scalability
+# Milestone 2: Connect with another Digital Twin
 
-In milestone one we have been able to demonstrate that the system can be setup and the basic ping service is working.
-
-This milestone is all about Security, Redundancy and Scalability
-
-Its important in such a system we finetune the components to make sure that minimal required perofrmance and scale can be achieve.
+Finding another Digital Twin by the twin id is a new use case required for exchanging information between N instances of use.
+For example, the implementation of "findDigitalTwinById()" should exist upon instance DSL to provide extensibility and connectivity with multiple peers on the grid. 
+This feature enables the ability to create a trusted network with different Digital Twins to establish connectivity. 
+Once a Digital Twin belongs to your trusted network, you'll be able to exchange data, interact via different applications.
 
 ## Acceptance criteria for milestone 2:
 
-* [ ] performance / Scalability
-    * [ ] 1000 twins can be deployed < 2h
-    * [ ] 1000 twins can be communicate to each other for at least 1 message per sec
-    * [ ] **+5000 transactions per second can be achieved over total system**
-    * [ ] architecture insight (based on logic), that this sytem can scale to millions of users
+
 * [ ] global approach
-    * [ ] Deploy twins over +10 countries
     * [ ] Demonstrate how the twins can communicate to each other using different ISP's
     * [ ] Demonstrate how a broken node gets twins to relocate and continue operations
-* [ ] security
-    * [ ] each message is end2end encrypted
-    * [ ] each message cannot get corrupted
-* [ ] redundancy
-    * [ ] when network link goes down, and there is still another network link possible the system can find the new path < 2 minutes worst case
-    * [ ] if a direct network connection is not possible, the system can route traffic over another node (hop over nodes)
-    * [ ] any node going down should not have impact on uptime of system
-    * [ ] If network is down, the messages will be queued and retried untill timeout
+* [ ] base features
+    * [ ] ping service on each digital twin
+    * [ ] ability for twins & browsers to communicate to each other (safe, scalable, secure)
+    * [ ] ability for twins & twins to communicate to each other
+    * [ ] reliablity, scale & performance is embedded requirement of the solution
+* [ ] basic communication requirements
+    * [ ] Browser can communicate over websockets to planetary network and/or digital twin
+    * [ ] Browser can use typed/complex messages (type security)
+    * [ ] Twins can talk to each other using PNIC (Planetary Nics)
+    * [ ] PNICs can communicate to each other over websockets (or equivalent choice)
+    * [ ] Ping service application that will be able to ping and ack a connected digital twin.

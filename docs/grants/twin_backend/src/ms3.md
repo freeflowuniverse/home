@@ -1,39 +1,20 @@
 
-## Milestone 3: Integrated storage primitive based on IPFS.
+## Milestone 3: Build first DSL engines starting creating value
 
-NFT's are a serious usecase of decentralized systems but its hard to do a proper integration.
+This feature enables the ability to create a trusted network with different Digital Twins to establish connectivity. 
+Once a Digital Twin belongs to your trusted network, you'll be able to exchange data, interact via different applications, and build customized apps that can be shared with the network.
 
-The purpose of milestone 3 is to implement an IPFS pinning service as part of the Planetary network.
-
-```mermaid
-graph TD
-    User1[User] ---  Browser
-    Browser --- |WEB3| call1{{IPFS PINNING CALL}}
-    call1 --- PNIC1[Planetary Network NIC]
-    PNIC1 --- PNIC2[Planetary Network NIC]
-    PNIC1 --- PNIC3[Planetary Network NIC]
-    PNIC1 --- p{FreeFlow Chain}
-    PNIC2 --- p{FreeFlow Chain}
-    PNIC3 --- p{FreeFlow Chain}
-
-```
-
-The pinned data can belong to 1 user or multiple users at once.
+A trusted network helps create high-level relationships between different nodes. This trust will boost the creation of a new business that positively impacts the network value.
 
 ## Acceptance criteria for milestone 1:
 
-* [ ] basic features
-    * [ ] pin IPFS files on TFGrid using planetary network
-    * [ ] integration with chosen blockchain (auditing/metadata)
-    * [ ] each node can be used to retrieve the files
-* [ ] performance / Scalability
-    * [ ] 100.000 files can be stored on the network
-* [ ] redundancy
-    * [ ] files can be stored multiple times on the network
-    * [ ] files can be retrieved through multiple locations
-    * [ ] if a node goes down but pinning happened on multiple nodes, file cannot get lost
-* [ ] payments
-    * [ ] users can pay for their storage requirements
-    * [ ] billing for used bandwidth
-    * [ ] users can topup 
-    * [ ] users can see if they still have money left for their storage requirements
+* [ ] functionality
+    * [ ] Implement the "Grant connection" feature on the DSL Engine
+    * [ ] Implement the "Deny connection" feature on the DSL Engine
+    * [ ] Implement the "Revoke connection" feature on the DSL Engine
+    * [ ] Only selected properties should be shared with another digital twin
+        * [ ] The connection sent should contain a list of required properties to share information
+    * [ ] Ask permission to connect with a different digital twin through TF Grid Client and Vlang Client.
+* [ ] security
+    * [ ] each message is end2end encrypted
+    * [ ] each message cannot get corrupted
