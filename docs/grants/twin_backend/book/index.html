@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="chapter-item expanded "><a href="mission.html"><strong aria-hidden="true">2.</strong> Mission</a></li><li class="chapter-item expanded "><a href="purpose.html"><strong aria-hidden="true">3.</strong> Purpose</a></li><li class="chapter-item expanded "><a href="architecture/architecture.html"><strong aria-hidden="true">4.</strong> Architecture</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="architecture/twins.html"><strong aria-hidden="true">4.1.</strong> Twins</a></li><li class="chapter-item expanded "><a href="architecture/planetary_network.html"><strong aria-hidden="true">4.2.</strong> Planetary Network</a></li><li class="chapter-item expanded "><a href="architecture/ffchain.html"><strong aria-hidden="true">4.3.</strong> FreeFlow Chain</a></li></ol></li><li class="chapter-item expanded "><a href="use_of_funds.html"><strong aria-hidden="true">5.</strong> Use Of Funds</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ms1.html"><strong aria-hidden="true">5.1.</strong> Milestone 1</a></li><li class="chapter-item expanded "><a href="ms2.html"><strong aria-hidden="true">5.2.</strong> Milestone 2</a></li><li class="chapter-item expanded "><a href="ms3.html"><strong aria-hidden="true">5.3.</strong> Milestone 3</a></li><li class="chapter-item expanded "><a href="license.html"><strong aria-hidden="true">5.4.</strong> License</a></li></ol></li><li class="chapter-item expanded "><a href="benefit_devxdao.html"><strong aria-hidden="true">6.</strong> Benefit</a></li><li class="chapter-item expanded "><a href="team/team.html"><strong aria-hidden="true">7.</strong> Team</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="team/gava.html"><strong aria-hidden="true">7.1.</strong> Gava</a></li><li class="chapter-item expanded "><a href="team/kristof.html"><strong aria-hidden="true">7.2.</strong> Kristof</a></li></ol></li><li class="chapter-item expanded "><a href="conclusion.html"><strong aria-hidden="true">8.</strong> Conclusion</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html" class="active"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="chapter-item expanded "><a href="mission.html"><strong aria-hidden="true">2.</strong> Mission</a></li><li class="chapter-item expanded "><a href="purpose.html"><strong aria-hidden="true">3.</strong> Purpose</a></li><li class="chapter-item expanded "><a href="architecture/architecture.html"><strong aria-hidden="true">4.</strong> Architecture</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="architecture/twins.html"><strong aria-hidden="true">4.1.</strong> Twins</a></li><li class="chapter-item expanded "><a href="architecture/planetary_network.html"><strong aria-hidden="true">4.2.</strong> Planetary Network</a></li><li class="chapter-item expanded "><a href="architecture/ffchain.html"><strong aria-hidden="true">4.3.</strong> FreeFlow Chain</a></li></ol></li><li class="chapter-item expanded "><a href="use_of_funds.html"><strong aria-hidden="true">5.</strong> Use Of Funds</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ms1.html"><strong aria-hidden="true">5.1.</strong> Milestone 1</a></li><li class="chapter-item expanded "><a href="ms2.html"><strong aria-hidden="true">5.2.</strong> Milestone 2</a></li><li class="chapter-item expanded "><a href="ms3.html"><strong aria-hidden="true">5.3.</strong> Milestone 3</a></li><li class="chapter-item expanded "><a href="license.html"><strong aria-hidden="true">5.4.</strong> License</a></li></ol></li><li class="chapter-item expanded "><a href="benefit_devxdao.html"><strong aria-hidden="true">6.</strong> Benefit</a></li><li class="chapter-item expanded "><a href="team/team.html"><strong aria-hidden="true">7.</strong> Team</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="team/gava.html"><strong aria-hidden="true">7.1.</strong> Gava</a></li><li class="chapter-item expanded "><a href="team/kristof.html"><strong aria-hidden="true">7.2.</strong> Kristof</a></li></ol></li><li class="chapter-item expanded "><a href="conclusion.html"><strong aria-hidden="true">8.</strong> Conclusion</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -193,6 +193,22 @@
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
