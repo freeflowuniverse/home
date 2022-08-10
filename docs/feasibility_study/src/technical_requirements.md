@@ -6,4 +6,8 @@ The second driver is utility availability. The country utilities which are major
 - existing real estate with reliable power and network connectivity
 - existing real estate without reliable power and network connectivity
 
-Initially we are going to focus on real estate that have existing reliable power and network available. 
+Initially we are going to focus on real estate that have existing reliable power and network available. The process to determine what areas are in scope for the feasibility study to proove that the internet infrastructure is able to power usercases will follow these technical requirements in this order:
+1. population density
+2. power and  network availability and reliability
+3. access to real estate
+

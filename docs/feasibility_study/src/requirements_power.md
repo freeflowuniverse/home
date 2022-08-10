@@ -1,6 +1,6 @@
-#### Power availability and reliability  {#power-availability-and-reliability}
+#### Power availability and reliability
 
-Power availability is a key technical driver for capacity deployments.  Power availability, quality and reliability are significant drivers for deployments
+Power availability is a key technical driver for capacity deployments. To make it easy to see and understand 
 
 Categories:
 
