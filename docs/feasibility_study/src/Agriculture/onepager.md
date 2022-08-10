@@ -1,4 +1,4 @@
-# Argriculture one pager
+# ThreeFold Technology enabler for digitising the Argricultural sector
 
 ## Introduction
 Argriculture in Tanzania represents x % of the GDP and involves y% of the total population.  The current state is still very traditional and does not include (much) modern farming tools and technologies.  To increase the returnn in the agricultural sector DATA is a very importantant commodity that can enhance the sectors success and get the sector into the 22 century.
@@ -46,9 +46,9 @@ Both larger quantities and better quality increase the earnings of the farmer.  
 
 ## Crop protection and fertilzer schemes 
 
-**Result**: Farming input providers benefit from having (anoyumous?) access to farming data.  Product like furtilizer, pest control and others provides them with real time information to improve and optimise their products.  The input providers need to reward the data owners (eg. farmer) for access to this data.  
+**Result**: Farming input providers benefit from having (anoyumous?) access to farming data.  Product like furtilizer, pest control and others provides them with real time information to improve and optimise their products. 
 
-**How**:
+**How**: The input providers need (are incentivised) to reward the data owners (eg. farmer) for access to this data.  
 
 ## Legal registration of land titles
 
@@ -56,17 +56,17 @@ Both larger quantities and better quality increase the earnings of the farmer.  
 
 **How**: Very simply having a farmer walk the boundaries of his owner lands and record the GPS footprint of this will allow all neighbouring farmers to present the land boundaries with everyones consent.  The time saved by the governents sending surveyors and recoding land boundaries can be shared with the farmers.
 
-## Greenhouse gas emissions 
+## Greenhouse gas emissions / absorbtion
 
-**Result**: in-setters for carbon migration
+**Result**: Tracking of gas emissions of storage allow in-setters for carbon migration. They have an interest to acquire recorded carbon storage or are able to bring offset methods to make the farming process carbin neutral.
 
-**How**:
+**How**: creating carbon offset certificates represents value and bringing carbin offseting into the farming process allow for a higher product price to retailers / consumers.  Tracking all of this in a local souvereign blockchain where the farmer retains ownership of that data is the starting point for this.
 
 ## Ecosystem services
 
-**Result**: Properly recorded water, enery and carbon use (and therwith the control of it) allows off-setters for water, energy and carbons to come into the ecosystem and create a neutral environment.
+**Result**: Properly recorded water, enery and carbon use (and there``with the control of it) allows off-setters for water, energy and carbons to come into the ecosystem and create a neutral environment.
 
-**How**:
+**How**: creating offset certificates represents value and bringing offseting into the farming process allow for a higher product price to retailers / consumers.  Tracking all of this in a local souvereign blockchain where the farmer retains ownership of that data is the starting point for this.
 
 ## Food safety, transparancy and tracebility
 
