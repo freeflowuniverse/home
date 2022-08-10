@@ -9,5 +9,6 @@ fi
 if ! [ -x "$(command -v mdbook)" ]; then
     cargo install mdbook
     cargo install mdbook-mermaid
+    cd.grants/twin_backend
     mdbook-mermaid install .
 fi
