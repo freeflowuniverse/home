@@ -26,4 +26,56 @@ The added value of digital technology to support improving livelihoods while con
 
 # Farmers First
 
+When farmers start collecting data off their farming activities, and retain ownership of that data, that data can lead to a large number of positive outcomes  that help farmers become better at what they do, retain a higher percentage of the final retail sales price of the produce and give them opportunities to attract forms of investment and income that are not available to them withough data ownership.
+
 ![data_ecosystem](img/fair_data_use_cases.png)
+
+## Product quality and quantity
+
+**Result**: increased payment from offtakers
+
+**How**: Collecting data during crop growth allows to record and compare datapoints between farmers in a community and even between farmers of different communities.  Quality control of the final produce of all farmers presents information what farming practises yields the largest quantities and best quality of produce.
+
+Both larger quantities and better quality increase the earnings of the farmer.  Farmers stays in control and owenership of his data, collective community data sets benefit everyone in the community.
+
+## Farm finance and business information
+
+**Result**: Banks, NGO's and for profit organisations have better information to base investment or funding decisions on.  This results in more funding being available to farmers to grow their crop.
+
+**How**: Data provides insights into farming practises and more importantly how they have improved over time.  This can be seems a a track record of the farmers success over the past crops.  Collected data, in ownership of the farmers, stored in a local (souvereign) blockchain to the farmer community (country) presents a trustworthy source for an audit trail of farming history.
+
+## Crop protection and fertilzer schemes 
+
+**Result**: Farming input providers benefit from having (anoyumous?) access to farming data.  Product like furtilizer, pest control and others provides them with real time information to improve and optimise their products.  The input providers need to reward the data owners (eg. farmer) for access to this data.  
+
+**How**:
+
+## Legal registration of land titles
+
+**Result**: Land deed information might not be 100% accurate a local and country governments.  Farming communities know historically what land belongs to whom.  Digital methods of recording what the actual (agreed) land ownership is is valuable information for local governemts who in return my allows for perks or payments to the farmers.
+
+**How**: Very simply having a farmer walk the boundaries of his owner lands and record the GPS footprint of this will allow all neighbouring farmers to present the land boundaries with everyones consent.  The time saved by the governents sending surveyors and recoding land boundaries can be shared with the farmers.
+
+## Greenhouse gas emissions 
+
+**Result**: in-setters for carbon migration
+
+**How**:
+
+## Ecosystem services
+
+**Result**: Properly recorded water, enery and carbon use (and therwith the control of it) allows off-setters for water, energy and carbons to come into the ecosystem and create a neutral environment.
+
+**How**:
+
+## Food safety, transparancy and tracebility
+
+**Result**: Farmers collecting data on how their crops are grown (and stay in ownership of this data) allow large foor enterprises to have precise information on what happened to this crop.  For global brands this represents marketing and differentiation capabilities for which they are willing to pay (a higher price for the crop of a direct payment for access to that information)
+
+**How**: Collect all sorts of datapoint related to farming and specific crop growth. Stored in a immutable, souvereign data store (eg. blockchain) this represent a datamarket where (anonymised) data gets sold to foor conglomorates and farmers stay owners of that data.
+
+## Branding
+
+**Result**: Precise information of what has gone in, how little ecosystem was used to create this crop, farmers (family) living conditions are all presenting value to conscious retailers and consumers who are willing to pay a higher price for the produce, putting a higher amount per produced items in the farmers pocket.  Again, data ownership retains with the farmer.
+
+**How**:  Conscieus buyers are willing to pay a higher price for unit for products that are good for the planet, logistical chain and farmers.
