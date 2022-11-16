@@ -1,5 +1,7 @@
 ##  Freeflow:
 
+Ken update 16/11/2022: Everything updated except the move from Tftech to freeflowuniverse (with an orgainization mode all CI/CD and tickets are lost, and PR links to weblets are lost, too much impact). The 2 repos on jimber are public NPM packages so didn't move those yet either. Permissions will break when they are moved, but they are fully publically available anyway.
+
 ### Main repository: 
 
 twin aydo: https://github.com/threefoldtech/twin_aydo
