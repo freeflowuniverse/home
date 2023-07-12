@@ -1,6 +1,6 @@
 # home
 
-### Repos at a First Glance
+### Repos at a first glance
 
 - [crystallib](https://github.com/freeflowuniverse/crystallib)
    - Generic library for v modules 
