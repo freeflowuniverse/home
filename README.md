@@ -3,13 +3,17 @@
 ### Repos at a First Glance
 
 - [crystallib](https://github.com/freeflowuniverse/crystallib)
-   - Generic libs in vLang
+   - Generic library for v modules 
 - [spiderlib](https://github.com/freeflowuniverse/spiderlib)
-   - web3 presence libs in vLang
+   - Library for v modules that help web development
    - majorly:
-    - https://htmx.org/
-    - tailwind css + chosen component libraries
-    - authentication with email, tfconnect, kepler
+    - [htmx integration](https://htmx.org/)
+    - expose rpc over openrpc with code generation
+    - integrated play env for openrpc
+    - docsify support
+    - static webserver
+    - integrated with javascript libs on weblib repo
+    - payment by means of stripe 
 - [weblib](https://github.com/freeflowuniverse/weblib)
    - components js/css or sometimes binary e.g. for tailwind (linux)
 - baobab
