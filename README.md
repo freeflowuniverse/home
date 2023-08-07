@@ -19,8 +19,6 @@
 - baobab
    - still in infancy, selfhealing universe with communication (way too early)
 
-Active team: https://github.com/threefoldtech/home/blob/master/wiki/team/team.md
-
 
 documents for a grant proposal see https://freeflowuniverse.github.io/home 
 
