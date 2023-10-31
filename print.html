@@ -1,0 +1,727 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>DEVXDAO Grant Digital Twin Network</title>
+        <meta name="robots" content="noindex" />
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="intro.html"><strong aria-hidden="true">1.</strong> Intro</a></li><li class="chapter-item expanded "><a href="mission.html"><strong aria-hidden="true">2.</strong> Mission</a></li><li class="chapter-item expanded "><a href="purpose.html"><strong aria-hidden="true">3.</strong> Purpose</a></li><li class="chapter-item expanded "><a href="architecture/architecture.html"><strong aria-hidden="true">4.</strong> Architecture</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="architecture/twins.html"><strong aria-hidden="true">4.1.</strong> Twins</a></li><li class="chapter-item expanded "><a href="architecture/planetary_network.html"><strong aria-hidden="true">4.2.</strong> Planetary Network</a></li><li class="chapter-item expanded "><a href="architecture/ffchain.html"><strong aria-hidden="true">4.3.</strong> FreeFlow Chain</a></li></ol></li><li class="chapter-item expanded "><a href="use_of_funds.html"><strong aria-hidden="true">5.</strong> Use Of Funds</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ms1.html"><strong aria-hidden="true">5.1.</strong> Milestone 1</a></li><li class="chapter-item expanded "><a href="ms2.html"><strong aria-hidden="true">5.2.</strong> Milestone 2</a></li><li class="chapter-item expanded "><a href="ms3.html"><strong aria-hidden="true">5.3.</strong> Milestone 3</a></li><li class="chapter-item expanded "><a href="license.html"><strong aria-hidden="true">5.4.</strong> License</a></li></ol></li><li class="chapter-item expanded "><a href="benefit_devxdao.html"><strong aria-hidden="true">6.</strong> Benefit</a></li><li class="chapter-item expanded "><a href="team/team.html"><strong aria-hidden="true">7.</strong> Team</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="team/gava.html"><strong aria-hidden="true">7.1.</strong> Gava</a></li><li class="chapter-item expanded "><a href="team/kristof.html"><strong aria-hidden="true">7.2.</strong> Kristof</a></li></ol></li><li class="chapter-item expanded "><a href="conclusion.html"><strong aria-hidden="true">8.</strong> Conclusion</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">DEVXDAO Grant Digital Twin Network</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="project-intro"><a class="header" href="#project-intro">Project Intro</a></h1>
+<blockquote>
+<p>Digital Twin primitive: composable self-contained for sovereign digital life</p>
+</blockquote>
+<h2 id="introduction-and-references"><a class="header" href="#introduction-and-references">Introduction and references</a></h2>
+<p>How we use the internet today is not in our best interest: we don’t own our data, most of the physical infrastructure is centralized, and a few companies own most of the internet. A significant redesign is in order to fit the needs of the modern world. Let us introduce the concept of a <strong><em>digital twin</em></strong>, our decentralized digital counterpart, to build experiences on the internet, a planet and human-centric. </p>
+<p><em>The Digital Twin is a primitive that assures you only own your data and no one else. Each digital twin is an actor that can talk to each other. Twins are a fully independent entity that knows how to translate that specific domain language to a functionality. Experience goes from the high-level requirements of the language down to the message to the twin.(RC: change to a much more technological definition.)</em></p>
+<h2 id="intro-web4"><a class="header" href="#intro-web4">Intro web4</a></h2>
+<p><img src="img/web4.png" alt="" /></p>
+<p><em>It consists of a peer-to-peer infrastructure. A decentralized cloud system to support a set of tool that will be used in the digital twin. The optimization is huge (x10) in terms of sustainability compared to centralized cloud computing. It is also more cost-effective.</em></p>
+<h2 id="intro-freeflow"><a class="header" href="#intro-freeflow">Intro FreeFlow</a></h2>
+<p>As an organization, FreeFlow aims to be a socioeconomic network where people collaborate to accelerate social platform regeneration and generate positive externalities.</p>
+<h2 id="problem"><a class="header" href="#problem">Problem</a></h2>
+<p>In the next ten years, we will witness technological macro trends converge. The AI machines race, the rise of micro-economies, and the intertwined-metaverse reality will assemble and merge into the next-gen user experiences. And the Digital Twin (DT), a simple yet powerful agnostic standard, can offer, at the same time, autonomy and privacy for individuals and surveillance control to dominant companies in the information technology industry. Undoubtedly DT primitives will impact work and society as the interface to the digital world in a conscious machine era.</p>
+<p>Anyway, it's a kind of moonshot now. However, organizations out there are developing different Digital Twin concepts. The basic idea from which it scaffolds off is a virtual representation that serves as the real-time digital counterpart of an individual, object, or process. </p>
+<p>The industry is talented in creating solutions to problems that should have never been there in the first place. </p>
+<p>We call this the Onion Problem. Still, it means that systems get so complicated that people don’t dare to change anything inside, so everyone keeps on creating other layers on top of the layers which already exist, this lead to even more complicated systems which no one seems to fully understand and allowing hackers to have a great time because there are hundreds of places to find vulnerabilities. The current way the internet is created is just wrong; the client-server is simply wrong, the fact that we duplicate our files at least ten times on the internet is wrong, and we need Web 4.0. </p>
+<h2 id="solution"><a class="header" href="#solution">Solution</a></h2>
+<p>Our purpose here is to find resources to build a composable, open-source Digital Twin, based on ThreeFold's Web4 proposal, running on top of the decentralized ThreeFold's grid, though layer 0 agnostic.</p>
+<p>Decentralized grid infrastructure and network architectures combined are 100% independent of any server or blockchain-based Internet experience and can give individuals control over their data. A sovereign center of digital life from work to social.</p>
+<p>FreeFlow is teaming up with ThreeFold to lead the architecture and building of the Digital Twin. FreeFlow is a ThreeFold partner, a self-government community ​​that is experimenting at the edges of the art, positive-sum games, and protocol economy. As we like to say: &quot;We're all gonna make… the machines work for people, not companies&quot;.</p>
+<h2 id="wrapping-up"><a class="header" href="#wrapping-up">Wrapping up</a></h2>
+<ul>
+<li>A trust-based system, where people can be themselves and communicate with each other and the project in a safe container with entire identity and transparency. </li>
+<li>An application and development platform allows them to build their “experience” in the fastest possible way with less complexity and no need to re-invent everything (like is the case now). </li>
+<li>Storage system where all data &amp; information are stored by the user and owned by the user. An ultra-reliable system that can never lose data and scales to a planetary scale. </li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mission"><a class="header" href="#mission">MISSION</a></h1>
+<p>Create the infrastructure layer for an upgraded internet:</p>
+<ul>
+<li>A more reliable internet, one which can meet the challenges of the future 
+(climate change issues, possibility of unrest, financial crisis, …). </li>
+<li>A more sustainable internet, using a lot less energy</li>
+<li>A more safe internet</li>
+<li>An internet where we can be the center of our digital life with more security, less costs, no middleman, …</li>
+</ul>
+<p>Providing for</p>
+<ul>
+<li>Experiences which allow people to be free, safe and self sovereign.</li>
+<li>Any application which puts the people in the center and allows them to have full control over their data &amp; future.</li>
+<li>New financial systems (DEFI, but different than today's casino-like environment, peer2peer)</li>
+<li>Projects which want to build communities to achieve planet positive goals.</li>
+<li>Countries that choose to work in a decentralized manner</li>
+</ul>
+<p>Of course all of this can only happen by building communities and by collaborating with like minded projects/people.</p>
+<h2 id="why-an-upgraded-internet"><a class="header" href="#why-an-upgraded-internet">Why an upgraded Internet</a></h2>
+<ul>
+<li>The current internet is very unstable (too centralized fiber cables, data centers, …)</li>
+<li>The current internet is very unsafe</li>
+<li>The current internet is not distributed enough, only in a few countries.</li>
+<li>The current internet is too power hungry.</li>
+<li>The current internet is too complicated</li>
+<li>The current internet is exploitative, it turned us all into a product.</li>
+</ul>
+<h2 id="to-create-an-upgraded-abundance-based-system-we-need-to-provide-following-3-pillars"><a class="header" href="#to-create-an-upgraded-abundance-based-system-we-need-to-provide-following-3-pillars">To create an upgraded abundance based system we need to provide following 3 pillars:</a></h2>
+<ul>
+<li>a regenerative, safe, sovereign internet infrastructure layer = ThreeFold</li>
+<li>an integrated stable decentralized financial system (DEFI) </li>
+<li>a set of experiences (applications) and information to allow everyone on equal basis to learn, create, exchange, travel, … basically experience the abundance based world</li>
+</ul>
+<blockquote>
+<p>Imagine a world where communities can build their own internet, from scratch, an internet which would deliver all the needs for a different future life. Each Internet deployed by the people for the people is called an OurWorld Internet.</p>
+</blockquote>
+<p>In each Regional Internet abundance is the base:</p>
+<ul>
+<li>lots of free information, education, knowledge (books, encyclopedias), earth information (maps, videos), art (music, video, …), …</li>
+<li>Your applications required for your digital professional and personal life are all free</li>
+<li>You can find anything for free, you can promote everything for free.</li>
+<li>You can freely exchange anything to anything else (money for good, good for good, money for money, …)</li>
+</ul>
+<p>This internet is “a peer2peer people’s internet”, created and owned by all of us together. The economic principles are dramatically different. Everything is available to build your own internet, from scratch. As a starting point you only need some computers and standard network equipment, all the rest is achieved by the magic of our threefold opensource software.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="purpose"><a class="header" href="#purpose">Purpose</a></h2>
+<p><img src="img/overview_purpose.png" alt="" /></p>
+<ul>
+<li>
+<p>Get basic communication, storage and messaging system to work (this grant)</p>
+<ul>
+<li>
+<p>Implement first functionalities inside Domain Specific Language</p>
+<ul>
+<li>Start message chat with another digital twin 
+<ul>
+<li>Send a text message (no interface)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Expand and solidify phase (primitive DSL) </p>
+<ul>
+<li>Connect with different blockchains through the digital twin</li>
+<li>Exchange files using the decentralized grid</li>
+<li>Permission access layer to specific files inside my cloud storage</li>
+<li>Deploy production Digital Twin on the decentralized grid</li>
+</ul>
+</li>
+<li>
+<p>Interface UI/UX</p>
+<ul>
+<li>The first production uses cases = Whatsapp, ...</li>
+</ul>
+</li>
+<li>
+<p>Build dAPP to set us free from big corporation services </p>
+<ul>
+<li>Alternative to Spotify </li>
+<li>Alternative Airbnb </li>
+<li>Alternative Uber eats</li>
+<li>Alternative TicketMaster</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="architecture"><a class="header" href="#architecture">Architecture</a></h1>
+<p><img src="architecture/img/arch1.png" alt="" /></p>
+<ul>
+<li><a href="architecture/twins.html">Digital Twins = FreeFlow Twins</a></li>
+<li><a href="architecture/planetary_network.html">Planetary Network</a></li>
+<li><a href="architecture/architecture/ffchain.html">FreeFlow Chain</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="architecture-twins"><a class="header" href="#architecture-twins">Architecture Twins</a></h1>
+<p>Each user has a digital twin, the user interacts with the digital twin through e.g. a browser but in future can be voice, chat, metaverse exerpience.</p>
+<pre class="mermaid">graph TD
+    User1[User 1] ---  Browser1
+    Browser1 --- |websockets| TWIN1
+    User2[User 2] ---  Browser2    
+    Browser2 --- |websockets| TWIN2
+    User3[User 3] ---  Browser3    
+    Browser3 --- |websockets| TWIN3
+    TWIN1 --- p{PLANETARY NETWORK}
+    TWIN2 --- p{PLANETARY NETWORK}
+    TWIN3 --- p{PLANETARY NETWORK}
+
+</pre>
+<ul>
+<li>Each digital twin is private for the user and only the user has access to it.</li>
+<li>The browser communicates over websockets (private and encrypted) per user to their twin.</li>
+<li>The twins talk to each other over the planetary network</li>
+</ul>
+<h2 id="experiences"><a class="header" href="#experiences">Experiences</a></h2>
+<pre class="mermaid">graph TD
+    User ---  Browser
+    Browser --&gt; a1[Whatsapp Alternative]
+    Browser --&gt; a2[Gdocs Alternative]
+    Browser --&gt; a3[Zoom Alternative]
+    Browser --&gt; a4[LinkedIn Alternative]
+    Browser --&gt; a5[Facebook Alternative]
+    Browser --&gt; a6[many more ...]
+        a1 --&gt; TWIN
+    a2 --&gt; TWIN
+    a3 --&gt; TWIN
+    a4 --&gt; TWIN
+    a5 --&gt; TWIN
+    a6 --&gt; TWIN
+    TWIN --- p{PLANETARY NETWORK}
+
+</pre>
+<h2 id="each-twin-has-multiple-experiences"><a class="header" href="#each-twin-has-multiple-experiences">Each twin has multiple experiences</a></h2>
+<p>Some example applications ready to be launched on top of the digital twin, it requires the purpose of this grant which is an improved communication mechanism between the twins.</p>
+<h3 id="metaverse"><a class="header" href="#metaverse">Metaverse</a></h3>
+<p><img src="architecture/img/metaverse.png" alt="" /></p>
+<h3 id="gdocwhatsapp-alternative"><a class="header" href="#gdocwhatsapp-alternative">Gdoc/Whatsapp/... alternative</a></h3>
+<p><img src="architecture/img/uhuru.png" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="architecture-planetary-network"><a class="header" href="#architecture-planetary-network">Architecture Planetary network</a></h1>
+<p>The planetary network (originally based on an opensource project yggdrasil, but will be extended as described in this grant) will have following features</p>
+<p>Each endpoint of the Planetary Network is called a Planetary NIC (PNIC)</p>
+<ul>
+<li>Reliable Message Bus (integrated in PNIC)
+<ul>
+<li>can send in super reliable way messages between the digital twins</li>
+<li>messages can be types, so strong verification happens (complex types supported)</li>
+<li>supports serialization based on CAPNP (https://capnproto.org)</li>
+</ul>
+</li>
+<li>Communication over UNIX domain sockets / websockets to the </li>
+<li>End2End Encrypted Messaging</li>
+<li>Each PNIC has private &amp; public key (unique globally)
+<ul>
+<li>addressing happens based on public keys globally</li>
+</ul>
+</li>
+<li>Self healing (if 1 link goes down it will look for other interface)</li>
+</ul>
+<h2 id="twin-to-planetary-nic"><a class="header" href="#twin-to-planetary-nic">Twin to Planetary NIC</a></h2>
+<p>The planetary nic is part of our planetary network (see https://github.com/freeflowuniverse/freeflow_network). Each NIC allows the twin to talk to a local interface of the planetary network.</p>
+<ul>
+<li>NIC stands for Network Interface</li>
+<li>Each NIC has following functions</li>
+</ul>
+<pre class="mermaid">graph TD
+    User1[User 1 Internet Experiences] --- TWIN1{Digital Twin 1}
+    TWIN1 --&gt;|Local Unix Socket, Secure| PNIC1[Planetary NIC]
+    PNIC1 ---|Planetary Network TCPIP| PNIC2[Planetary NIC]
+</pre>
+<h2 id="twin-to-twin-communication"><a class="header" href="#twin-to-twin-communication">Twin to Twin Communication</a></h2>
+<pre class="mermaid">graph TD
+    User1[User 1 Internet Experiences] --- TWIN1{Digital Twin 1}
+    User2[User 2 Internet Experiences] --- TWIN2{Digital Twin 1}
+    User3[User 3 Internet Experiences] --- TWIN3{Digital Twin 1}
+    TWIN1 --&gt;|Local Unix Socket| PNIC1[Planetary NIC]
+    TWIN2{Digital Twin 2} --&gt;|Local Unix Socket| PNIC2[Planetary NIC]
+    TWIN3{Digital Twin 3} --&gt;|Local Unix Socket| PNIC3[Planetary NIC]
+    PNIC1 ---|Planetary Network TCPIP| PNIC2[Planetary NIC]
+    PNIC2 ---|Planetary Network TCPIP| PNIC3[Planetary NIC]
+    PNIC1 ---|Planetary Network TCPIP| PNIC3[Planetary NIC]
+</pre>
+<h2 id="reliable-message-bus"><a class="header" href="#reliable-message-bus">Reliable Message Bus</a></h2>
+<p>Is an integrated part of the Planetary Network and its PNIC.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="freeflow-chain-architecture"><a class="header" href="#freeflow-chain-architecture">FreeFlow Chain Architecture</a></h1>
+<pre class="mermaid">graph TD
+    User1[User 1] ---  Browser1
+    Browser1 --- |websockets| TWIN1
+    User2[User 2] ---  Browser2    
+    Browser2 --- |websockets| TWIN2
+    User3[User 3] ---  Browser3    
+    Browser3 --- |websockets| TWIN3
+    TWIN1 --- p{FreeFlow Chain}
+    TWIN2 --- p{FreeFlow Chain}
+    TWIN3 --- p{FreeFlow Chain}
+
+</pre>
+<p>The FreeFlow chain will be based on to be chosen blockchain.</p>
+<p>The blockchain will provide following functions</p>
+<ul>
+<li>identity management
+<ul>
+<li>kyc verification (with link to 3e party providers)</li>
+<li>DID support</li>
+</ul>
+</li>
+<li>circles
+<ul>
+<li>people get grouped into circles</li>
+</ul>
+</li>
+<li>authentication/verification
+<ul>
+<li>proof of authenticity</li>
+<li>audit log of security events</li>
+</ul>
+</li>
+<li>DAO features</li>
+<li>Address Book (like a sort of phonebook)</li>
+<li>Financial Management/money as relevant for this product</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="use-of-funds"><a class="header" href="#use-of-funds">Use of Funds</a></h1>
+<blockquote>
+<p>This first grant application supports a proof of concept platform development to meet the technological and business needs of <em>Digital Twin</em></p>
+</blockquote>
+<h2 id="project-scope"><a class="header" href="#project-scope">Project Scope</a></h2>
+<p>The scope of this grant refers to item 1 described above. The same enrollment process will be done when the previous one is finished. The aiming goal is to complete all the three steps of development of the technology itself to achieve its full potential </p>
+<p>All the specific milestone described and detailed below refers again to proof of concept item 1</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="milestone-1-basic-working--setup"><a class="header" href="#milestone-1-basic-working--setup">Milestone 1: Basic working &amp; Setup</a></h1>
+<h2 id="what-do-we-want-to-achieve-in-milestone-1"><a class="header" href="#what-do-we-want-to-achieve-in-milestone-1">What do we want to achieve in milestone 1</a></h2>
+<ul>
+<li>first basic working of digital twin technology</li>
+<li>deployment &amp; basic testing of digital twins</li>
+<li>ping service implemented (prove the concept is working)</li>
+<li>demonstrate the basic working network primitives</li>
+</ul>
+<h2 id="chosen-technologies"><a class="header" href="#chosen-technologies">Chosen technologies:</a></h2>
+<p>There is a <strong>considerable shift to have guaranteed</strong> that the most remote community would have access to every fundamental resource in terms of access and connectivity. We are very proud of collaborating with ThreeFold, which is building an entire grid to provide all those benefits.</p>
+<h3 id="tfgrid"><a class="header" href="#tfgrid">TFGrid</a></h3>
+<ul>
+<li>The infrastructure is the network of 3Node that the digital twin will be hosted on.</li>
+<li>see https://www.threefold.io</li>
+</ul>
+<h3 id="digital-twin-technology-freeflow-twin"><a class="header" href="#digital-twin-technology-freeflow-twin">Digital Twin Technology (FreeFlow Twin)</a></h3>
+<ul>
+<li>The code will be in https://github.com/freeflowuniverse</li>
+<li>is NodeJS or VLANG based user centric app, deployed on Zero-OS using FFChain &amp; Planetary network for communication</li>
+</ul>
+<p>see <a href="architecture/twins.html">Digital Twin Architects</a></p>
+<h3 id="ffchain"><a class="header" href="#ffchain">FFChain</a></h3>
+<ul>
+<li>Is a local blockchain which is deployed together with the Planetary network &amp; nodes</li>
+<li>Choice to be made which blockchain we go for could be Algorand Sidechain, Casperlabs, Cosmos...</li>
+</ul>
+<h3 id="zero-os"><a class="header" href="#zero-os">Zero OS</a></h3>
+<ul>
+<li>Ultra scalable low level operting system</li>
+<li>Repository: <a href="https://github.com/threefoldtech/zos">https://github.com/threefoldtech/zos</a></li>
+</ul>
+<h3 id="planetary-network"><a class="header" href="#planetary-network">Planetary Network</a></h3>
+<ul>
+<li>Repository: https://github.com/freeflowuniverse/freeflow_network</li>
+<li>see <a href="architecture/planetary_network.html">Planetary Network Architects</a></li>
+</ul>
+<h2 id="implementation-remarks"><a class="header" href="#implementation-remarks">Implementation Remarks</a></h2>
+<p>Finding another Digital Twin by the twin id is a new use case required for exchanging information between N instances of use.</p>
+<p>For example, the implementation of &quot;findDigitalTwinById()&quot; should exist upon instance DSL to provide extensibility and connectivity with multiple peers on the grid. </p>
+<p>This milestone will be achieved by implementing the primitives both on NodeJS Backend and Rust DSL Engine.</p>
+<p>This feature enables the ability to create a trusted network with different Digital Twins to establish connectivity. </p>
+<p>Once a Digital Twin belongs to your trusted network, you'll be able to exchange data, interact via different applications, and build customized apps that can be shared with the network.</p>
+<p>A trusted network helps create high-level relationships between different nodes. This trust will boost the creation of a new business that positively impacts the network value.</p>
+<ul>
+<li>Should be able to run queries on grid network;</li>
+<li>Should be able to check the result of each query</li>
+<li>The query result should contain identity/location information from a different twin.</li>
+</ul>
+<h2 id="acceptance-criteria-for-milestone-1"><a class="header" href="#acceptance-criteria-for-milestone-1">Acceptance criteria for milestone 1:</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+base features
+<ul>
+<li><input disabled="" type="checkbox"/>
+ping service on each digital twin</li>
+<li><input disabled="" type="checkbox"/>
+ability for twins &amp; browsers to communicate to each other (safe, scalable, secure)</li>
+<li><input disabled="" type="checkbox"/>
+ability for twins &amp; twins to communicate to each other</li>
+<li><input disabled="" type="checkbox"/>
+reliablity, scale &amp; performance is embedded requirement of the solution</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+technology choices
+<ul>
+<li><input disabled="" type="checkbox"/>
+blockchain has been chosen and can be deployed, minimal requirements met</li>
+<li><input disabled="" type="checkbox"/>
+RMB is created in golang or vlang</li>
+<li><input disabled="" type="checkbox"/>
+PNIC is created in golang or vlang</li>
+<li><input disabled="" type="checkbox"/>
+Digital Twin is created in vlang or nodejs</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+infrastrucure as code concept:
+<ul>
+<li><input disabled="" type="checkbox"/>
+Should be able to run, stop and restart the entire infrastructure using IAC concept</li>
+<li><input disabled="" type="checkbox"/>
+by means of a vlang based script</li>
+<li><input disabled="" type="checkbox"/>
+by means of a terraform based script</li>
+<li><input disabled="" type="checkbox"/>
+by means of kubernetes scripts</li>
+<li><input disabled="" type="checkbox"/>
+chosen blockchain can be deployed</li>
+<li><input disabled="" type="checkbox"/>
+twins can be deployed</li>
+<li><input disabled="" type="checkbox"/>
+planetary network be deployed (with integrated RMB)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+basic communication requirements
+<ul>
+<li><input disabled="" type="checkbox"/>
+Browser can communicate over websockets to planetary network and/or digital twin</li>
+<li><input disabled="" type="checkbox"/>
+Browser can use typed/complex messages (type security)</li>
+<li><input disabled="" type="checkbox"/>
+Twins can talk to each other using PNIC (Planetary Nics)</li>
+<li><input disabled="" type="checkbox"/>
+PNICs can communicate to each other over websockets (or equivalent choice)</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+monitoring
+<ul>
+<li><input disabled="" type="checkbox"/>
+rest based endpoints are available to check health</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+compatibility
+<ul>
+<li><input disabled="" type="checkbox"/>
+need to be able to demonstrate how every javascript based project will be able to communicate &amp; work with this backend technology</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="milestone-2-security-redundancy-and-scalability"><a class="header" href="#milestone-2-security-redundancy-and-scalability">Milestone 2: Security, Redundancy and Scalability</a></h1>
+<p>In milestone one we have been able to demonstrate that the system can be setup and the basic ping service is working.</p>
+<p>This milestone is all about Security, Redundancy and Scalability</p>
+<p>Its important in such a system we finetune the components to make sure that minimal required perofrmance and scale can be achieve.</p>
+<h2 id="acceptance-criteria-for-milestone-2"><a class="header" href="#acceptance-criteria-for-milestone-2">Acceptance criteria for milestone 2:</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+performance / Scalability
+<ul>
+<li><input disabled="" type="checkbox"/>
+1000 twins can be deployed &lt; 2h</li>
+<li><input disabled="" type="checkbox"/>
+1000 twins can be communicate to each other for at least 1 message per sec</li>
+<li><input disabled="" type="checkbox"/>
+<strong>+5000 transactions per second can be achieved over total system</strong></li>
+<li><input disabled="" type="checkbox"/>
+architecture insight (based on logic), that this sytem can scale to millions of users</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+global approach
+<ul>
+<li><input disabled="" type="checkbox"/>
+Deploy twins over +10 countries</li>
+<li><input disabled="" type="checkbox"/>
+Demonstrate how the twins can communicate to each other using different ISP's</li>
+<li><input disabled="" type="checkbox"/>
+Demonstrate how a broken node gets twins to relocate and continue operations</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+security
+<ul>
+<li><input disabled="" type="checkbox"/>
+each message is end2end encrypted</li>
+<li><input disabled="" type="checkbox"/>
+each message cannot get corrupted</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+redundancy
+<ul>
+<li><input disabled="" type="checkbox"/>
+when network link goes down, and there is still another network link possible the system can find the new path &lt; 2 minutes worst case</li>
+<li><input disabled="" type="checkbox"/>
+if a direct network connection is not possible, the system can route traffic over another node (hop over nodes)</li>
+<li><input disabled="" type="checkbox"/>
+any node going down should not have impact on uptime of system</li>
+<li><input disabled="" type="checkbox"/>
+If network is down, the messages will be queued and retried untill timeout</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="milestone-3-integrated-storage-primitive-based-on-ipfs"><a class="header" href="#milestone-3-integrated-storage-primitive-based-on-ipfs">Milestone 3: Integrated storage primitive based on IPFS.</a></h2>
+<p>NFT's are a serious usecase of decentralized systems but its hard to do a proper integration.</p>
+<p>The purpose of milestone 3 is to implement an IPFS pinning service as part of the Planetary network.</p>
+<pre class="mermaid">graph TD
+    User1[User] ---  Browser
+    Browser --- |WEB3| call1{{IPFS PINNING CALL}}
+    call1 --- PNIC1[Planetary Network NIC]
+    PNIC1 --- PNIC2[Planetary Network NIC]
+    PNIC1 --- PNIC3[Planetary Network NIC]
+    PNIC1 --- p{FreeFlow Chain}
+    PNIC2 --- p{FreeFlow Chain}
+    PNIC3 --- p{FreeFlow Chain}
+
+</pre>
+<p>The pinned data can belong to 1 user or multiple users at once.</p>
+<h2 id="acceptance-criteria-for-milestone-1-1"><a class="header" href="#acceptance-criteria-for-milestone-1-1">Acceptance criteria for milestone 1:</a></h2>
+<ul>
+<li><input disabled="" type="checkbox"/>
+basic features
+<ul>
+<li><input disabled="" type="checkbox"/>
+pin IPFS files on TFGrid using planetary network</li>
+<li><input disabled="" type="checkbox"/>
+integration with chosen blockchain (auditing/metadata)</li>
+<li><input disabled="" type="checkbox"/>
+each node can be used to retrieve the files</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+performance / Scalability
+<ul>
+<li><input disabled="" type="checkbox"/>
+100.000 files can be stored on the network</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+redundancy
+<ul>
+<li><input disabled="" type="checkbox"/>
+files can be stored multiple times on the network</li>
+<li><input disabled="" type="checkbox"/>
+files can be retrieved through multiple locations</li>
+<li><input disabled="" type="checkbox"/>
+if a node goes down but pinning happened on multiple nodes, file cannot get lost</li>
+</ul>
+</li>
+<li><input disabled="" type="checkbox"/>
+payments
+<ul>
+<li><input disabled="" type="checkbox"/>
+users can pay for their storage requirements</li>
+<li><input disabled="" type="checkbox"/>
+billing for used bandwidth</li>
+<li><input disabled="" type="checkbox"/>
+users can topup </li>
+<li><input disabled="" type="checkbox"/>
+users can see if they still have money left for their storage requirements</li>
+</ul>
+</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="license"><a class="header" href="#license">License</a></h2>
+<ul>
+<li>All research papers or the like should be in Creative Commons.</li>
+<li>All code is MIT or Apache 2</li>
+<li>The Planetary Network code is LGPL</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="benefit-for-devx-dao"><a class="header" href="#benefit-for-devx-dao">Benefit for DEVx DAO</a></h1>
+<blockquote>
+<blockquote>
+<p>Explanation as to how your proposed project would benefit the DEVxDAO ecosystem AND/OR support transparent and open source scientific research and/ or development if applicable.</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>TODO: </p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="founders-background"><a class="header" href="#founders-background">Founders Background</a></h1>
+<p><img src="team/img/exits.png" alt="" /></p>
+<ul>
+<li><a href="team/./gava.html">Gava ...</a></li>
+<li><a href="team/kristof.html">Kristof ...</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gava"><a class="header" href="#gava">Gava</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="kristof"><a class="header" href="#kristof">Kristof</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="milestones-breakdown"><a class="header" href="#milestones-breakdown">Milestones Breakdown</a></h1>
+<h2 id="kpis-and-beta-launch-outcomes"><a class="header" href="#kpis-and-beta-launch-outcomes">KPIs and Beta Launch Outcomes</a></h2>
+<p>We will accomplish the essential proof of concept functionality when 500 users create their digital twins and invite at least one new user to build their trusted network.</p>
+<h2 id="development-approach"><a class="header" href="#development-approach">Development Approach</a></h2>
+<p>We've broken down our technical milestones into three modules for this grant proposal with a total project duration of 7 months and a budget of 300,000 Euros.</p>
+<p>We provide a more detailed breakdown of the development during each milestone in the Milestone section of the application.</p>
+<p>Platform development uses Rust, NodeJS, VLang, and Redis.</p>
+<h2 id="your-resume-linkedin-or-git-for-developers"><a class="header" href="#your-resume-linkedin-or-git-for-developers">Your resume (Linkedin) or Git (For developers)</a></h2>
+<p><em>LINKEDIN GAVA + LINKEDIN DEVs</em></p>
+<p>Grant details</p>
+<p>Please enter the total amount you are requesting as a grant:</p>
+<p>300.000</p>
+<p>Will payments for this work be made to an entity such as your company or organization instead of to you personally?</p>
+<p>DEFINIR</p>
+<blockquote>
+<p>TODO: whats is this?</p>
+</blockquote>
+<p>Please select all planned uses for your grant funds. Select all that apply and enter the estimated portion of grant funds allocated for each. All totals must equal the upper amount.</p>
+<p>Salary and other personal compensation </p>
+<p>Percentage kept by OP: 25%</p>
+<p>Travel and conferences</p>
+<p>Percentage kept by OP: 0%</p>
+<p>Software, tools, infrastructure </p>
+<p>Percentage kept by OP: 0%</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        <script type="text/javascript" src="mermaid.min.js"></script>
+        <script type="text/javascript" src="mermaid-init.js"></script>
+
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </body>
+</html>
