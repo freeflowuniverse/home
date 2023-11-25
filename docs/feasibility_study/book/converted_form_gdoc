@@ -1,0 +1,981 @@
+<!-- Output copied to clipboard! -->
+
+<!-----
+
+You have some errors, warnings, or alerts. If you are using reckless mode, turn it off to see inline alerts.
+* ERRORs: 0
+* WARNINGs: 1
+* ALERTS: 15
+
+Conversion time: 7.634 seconds.
+
+
+Using this Markdown file:
+
+1. Paste this output into your source file.
+2. See the notes and action items below regarding this conversion run.
+3. Check the rendered output (headings, lists, code blocks, tables) for proper
+   formatting and use a linkchecker before you publish this page.
+
+Conversion notes:
+
+* Docs to Markdown version 1.0β33
+* Tue Aug 09 2022 04:34:31 GMT-0700 (PDT)
+* Source doc: tnz_feasibility_draft v1
+
+WARNING:
+Inline drawings not supported: look for ">>>>>  gd2md-html alert:  inline drawings..." in output.
+
+* Tables are currently converted to HTML tables.
+* This document has images: check for >>>>>  gd2md-html alert:  inline image link in generated source and store images to your server. NOTE: Images in exported zip file from Google Docs may not appear in  the same order as they do in your doc. Please check the images!
+
+----->
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 1; ALERTS: 15.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+<a href="#gdcalert2">alert2</a>
+<a href="#gdcalert3">alert3</a>
+<a href="#gdcalert4">alert4</a>
+<a href="#gdcalert5">alert5</a>
+<a href="#gdcalert6">alert6</a>
+<a href="#gdcalert7">alert7</a>
+<a href="#gdcalert8">alert8</a>
+<a href="#gdcalert9">alert9</a>
+<a href="#gdcalert10">alert10</a>
+<a href="#gdcalert11">alert11</a>
+<a href="#gdcalert12">alert12</a>
+<a href="#gdcalert13">alert13</a>
+<a href="#gdcalert14">alert14</a>
+<a href="#gdcalert15">alert15</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+
+* The Why (Chris: 10-20 pages)
+    * Internet to country
+    * Different approach
+    * Green
+    * … 
+* Technical 
+    * Architecture TFGrid
+    * Why can data never be lost
+    * Why can 100% uptime be achieved
+* TNZ Deployment
+    * Requirements for locations (map some maps)
+    * Locations, …
+    * Link between m2 land & generator or power feed
+* Connectivity
+    * Link to other projects e/g. Fiber backend
+    * Link to telcos
+* Link to other projects like … also working in TNZ/ZNZ 	
+* Economics the new internet (Kristof)
+    * Why tokens = CHI
+* Deployment Specs (Kristof)
+    * Explain the 3 options how it can be deployed (2-3 pages), explain pros and cons for each 
+    * More detailed specs container version (kristof, 5-8 pages)
+    * Calculations Container (kristof, 2 pages)
+* Internet Economics (Kristof)
+    * Cost per user
+    * Power Usage
+    * …
+* Operations
+    * ?
+* Link to Mama Samia Institute
+    * Explain the purpose
+    * What will it do
+    * How it will create use cases on top
+* freeflow life = Web 4 (20 pages)
+    * First experiences  =freeflow life with as backend freeflow twin
+    * 9x experience with screenshots, explanation, feature descriptions 
+* Integrated Additional Use cases
+    * Edge Cloud
+    * Education (Sikana)
+    * Uhuru (let's keep on using this name for now)
+* Ecosystem
+    * Blockchains… (e.g. Cardano, Algorand, …)
+    * 
+
+**UNITED REPUBLIC OF TANZANIA**
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image1.png "image_tooltip")
+
+
+**FEASIBILITY STUDY**
+
+**FOR**
+
+**<span style="text-decoration:underline;">T</span>ANZANIA  <span style="text-decoration:underline;">S</span>OVEREIGN <span style="text-decoration:underline;">I</span>NTERNET AND DIGITAL BACKBONE PLATFORM (“TSI”)**
+
+**BETWEEN**
+
+**MINISTRY OF INFORMATION, COMMUNICATION and INFORMATION TECHNOLOGY**
+
+**AND**
+
+**THREEFOLD NV **
+
+**AUGUST 2022**
+
+
+        
+
+
+    **TABLE OF CONTENTS**
+
+
+[TOC]
+
+
+
+    
+
+<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.jpg). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image2.jpg "image_tooltip")
+
+
+
+    
+
+
+
+* 
+Executive Summary (include the WHY)
+
+
+    * Internet to country
+    * Different approach
+    * Green
+    * … 
+
+Affordable, performant and accessible internet for everyone, empowering the people of Tazania in 
+
+If the Covid-19 pandemic has taught us anything, it is that digital is a necessity. It guarantees the continuity of services in the event of a crisis, and is also essential for ensuring a country’s competitiveness and growth.
+
+To initiate Tanzania’s digital transformation and ensure the social, financial and digital inclusion of all its citizens, the country needs to embark on a digitisation strategy focussed on two core areas
+
+**Digital sovereignty and Unlocking of the Internet Economy**
+
+A sustainable digital transformation can only be achieved if it is founded on digital sovereignty, which is the primary reason for the PPP between the Tanzanian public sector, private sector and Threefold Foundation to establish a sovereign internet infrastructure.  This strategic critical infrastructure ensures Tanzania's digital sovereignty and, more generally, the successful digitalisation of the economy and unlocking of the internet economy.
+
+Three initiatives will spearhead the realisation of Tanzania Digital Sovereignty and the unlocking of its Internet Economy 
+
+**Digitisation of Civil Services**: The objectives pursued here aim to offer citizens better access to public services and to speed up administrative procedures Focussed on , on the administrative gains made possible by digital technology, It covers the digitisation of administrative procedures and basic social services, the paperless management of financial flows (tokenization of civil services) and the training of the various segments of society in the use of technological tools. 
+
+**Digitisation of Key Economic Sectors: **Increasing national wealth through the building of an innovation and start-up ecosystem looks at digitalising key sectors of Togo’s economy (logistics, trade, agriculture, etc.), creating support programmes for start-ups and using big data to help public and private sector decision-making processes.
+
+**Universal Access to Information:** Knowledge is power and ensuring every Tanzanian citizen has affordable access to the wealth of information made possible by the www is key in the empowerment of the Tanzanian population. 
+
+
+## 
+
+
+## Description of the Project {#description-of-the-project}
+
+The Tanzania Sovereign Internet Platform (“TSIP”) as envisaged in the memorandum of understanding (see appendix A), is a end to end ecosystem blending people, technology and key principles in order to deliver Internet Infrastructure and digital services that ensure the privacy, sovereignty and empowerment of Tanzania and its people. 
+
+The make up of such an ecosystem includes:
+
+
+
+<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline drawings not supported directly from Docs. You may want to copy the inline drawing to a standalone drawing and export by reference. See <a href="https://github.com/evbacher/gd2md-html/wiki/Google-Drawings-by-reference">Google Drawings by reference</a> for details. The img URL below is a placeholder. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![drawing](https://docs.google.com/drawings/d/12345/export/png)
+
+**TSIP Grid (powered by Threefold) **
+
+
+
+* a network of decentralised, autonomous and distributed edge micro data centre infrastructure forming a meshed internet grid.
+* located entirely within Tanzania, providing national sovereignty over data and all associated revenue streams as well as security and immunity from disruption
+* the foundational layer of the TSIP ecosystem, powered by Threefold technology, providing the compute, storage and network resources, enabling FreeFlow Life and further digital services to empower the nation of Tanzania
+
+**FreeFlow Life **
+
+
+
+* the primary internet experience of TSIP giving every TZN citizen their digital life in one experience. 
+* a universally accessible digital platform through which Tanzanians can access improved alternatives to commonly used global communications, media and productivity software;
+* Freeflow Life ensures every citizen is guaranteed their privacy, sovereignty and all the digital services they need to not only exist, but to thrive in the TZN digital economy 
+
+**Mama Samia Institute (Incubation Hub)**
+
+
+
+* An incubation hub to empower the development of further digital services to run on top of the TSIP platform and further empower and uplift the community of Tanzania.  Such examples include:
+    * Virtual healthcare delivery
+    * Virtual education curriculum
+    * Digital banking
+    * etc
+
+
+## Market Assessment and Strategy {#market-assessment-and-strategy}
+
+
+### Current Economic Landscape {#current-economic-landscape}
+
+
+
+* The Economy of Tanzania in 2021  With an average real GDP growth rate of 6.3% over the past decade (2010-2019), 
+* Tanzania is among the fastest-growing economies in Africa and in the world. 
+* Yet, widespread poverty persists with 49 percent of Tanzania’s population living below the international extreme poverty line of $1.90 per day (World Bank, 2011)
+* In 2020, the real GDP of Tanzania grew by +4.8% reaching USD 64.4 billion, and grew by +7% in 2019  to reach USD 60.8 billion In April 2021, 
+* Tanzania’s new president Samia Suluhu Hassan gave her first speech to the parliament, mentioning the priorities of the Sixth Phase Government in the next five years to reach a GDP growth rate of at least 8% yearly. 
+* Notable sectors of the Tanzanian economy are tourism, mining, construction, agriculture, and manufacturing. Tanzania Key Economic Sectors According to the economic data included in the National Data of Tanzania Mainland of 2013-2019 by the National Bureau of Statistics, at current market prices, 
+    * Services made the highest shares of GDP (40.0%) 
+    * followed by Industry and Construction (31.1%) 
+    * Agriculture, Forestry and Fishing  (28.9%) 
+
+
+
+<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image3.png "image_tooltip")
+
+
+Among Tanzania’s predominantly rural population (73 percent), economic growth has been limited. Inclusive, broad-based growth is hindered by low productivity growth in labour-intensive sectors like agriculture, which employs 77 percent of working age adults. The agriculture sector grew just 4 percent per year over the past decade.
+
+The Tanzanian private sector’s vast financial resources and expertise in market-based solutions have the potential for tackling systemic societal challenges. Currently employing about 70 percent of the youth in Tanzania, the private sector provides a critical pathway to self-reliance.
+
+USAID objectives include advancing Tanzania’s socio-economic status toward middle-income status by 2025; sustaining inclusive, broad-based economic growth; supporting private sector investment in energy as well as agriculture and natural resource-based tourism; and increasing the access of women and youth to resources and knowledge that allow them to take advantage of opportunities in these sectors.
+
+Source: (https://[www.tanzaniainvest.com/economy](www.tanzaniainvest.com/economy))
+
+
+### Economic Empowerment {#economic-empowerment}
+
+TSIP must enable the economic empowerment of Tanzania, ensure the digital sovereignty of the nation and unlock the Tanzanian internet economy. TSIP is the secure, sovereign and sustainable digital infrastructure and services that empowers each and every TZN citizen to thrive in the digital economy and partake in the economic success of their country.
+
+TSIP should empower the economic and overall well being of every citizen, promoting new job creation and contributing toward the following metrics of Tanzania economy:
+
+
+
+* Accelerate Existing Industry Performance: Accelerating performance in existing industry sectors
+    * Tourism
+    * Mining
+    * Construction
+    * Agriculture
+    * Manufacturing
+    * Agriculture
+* New industry development: opening new industry sectors and contributing nett new GDP to Tanzania overall economic development
+    * Healthcare
+    * information technology
+    * Healthcare
+    * Financial services
+
+
+### Social Impact {#social-impact}
+
+The World Bank (WB) upgraded Tanzania’s country classification by income level from low income to lower-middle income in 2020-21. The WB assigns the world’s economies to four income groups—low, lower-middle, upper-middle, and high-income countries, based on their GNI per capita in current USD. Low income is defined as less than USD 1,036 in 2020 (USD 1,026 in 2019); Lower-middle income is between USD 1,036 and USD 4,045 (USD 1,026 – 3,995 in 2019); upper-middle income is between USD 4,046 – USD 12,535 (USD 3,996 – 12,375 in 2019); and high income is any higher than USD 12,535 (>USD12,375 in 2019).
+
+Read more at: https://www.tanzaniainvest.com/economy/middle-income-country-status and follow us on [www.twitter.com/tanzaniainvest](www.twitter.com/tanzaniainvest)
+
+TSIP must enable the social upliftment of Tanzanian people and afford every citizen universal and impartial access to the necessary civil services to ensure their individual success and well being, Critical success factors in delivering on the above are the fundamental attributes of TSIP, including:
+
+**Sovereign Digital Identity** 
+
+
+
+* In the digital era, the starting point to our success as digital citizens is ensuring our digital sovereignty identity. Freeflow life is our digital twin in the internet economy and is a verified and immutable representation of us as a digital citizen
+
+**Data Sovereignty & Privacy**
+
+
+
+* 
+
+**Digital Productivity**
+
+
+
+* 
+
+**Universal Digital Access**
+
+
+
+* Affording every citizen universal access to valuable content, networks and resources to promote the health, education and welfare of the people of Tanzania, including:
+    * Universal access to education
+    * Universal access to financial services
+    * Universal access to healthcare services
+    * Universal access to information in general
+
+
+### Methodology {#methodology}
+
+ 
+
+
+    -   	Process
+
+
+        o   create outline & roadmap, identify key ministries, dedicate resources
+
+
+        o   RFP for legal, regulatory analysis; describe qualifications, process
+
+
+        o   summary of meetings with GoZ entities, private sector, civil society, legal
+
+
+             [_include meeting notes as exhibits to FS?_]
+
+
+## 
+
+
+### Market Feasibility {#market-feasibility}
+
+The Internet economy is largely untapped in Africa compared to the developed markets and poses huge potential to boost the overall GDP of most African countries
+
+ _"By 2025, Africa’s iGDP should grow to at least 5 to 6 percent, matching that of leading economies such as Sweden, Taiwan, and the United Kingdom. However, if the Internet achieves the same kind of scale and impact as the spread of mobile phones in Africa, iGDP could account for as much as 10 percent, or $300 billion, of total GDP while producing a leap forward in economic and social development." (Source: [McKinsey](https://www.mckinsey.com/industries/high-tech/our-insights/lions-go-digital-the-internets-transformative-potential-in-africa))_
+
+<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image4.png "image_tooltip")
+
+
+Extensive research has been done to evaluate the market readiness of each country within the African continent relative in terms of the feasibility to unlock the potential economic value within the internet economy
+
+The following explains the basis for the evaluation and the results. Tanzania scored extremely high relative to its peers and shows its readiness for growth in the internet based economy 
+
+
+#### Market Feasibility Study Criteria {#market-feasibility-study-criteria}
+
+
+
+<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image5.png "image_tooltip")
+
+
+
+### 
+
+
+#### Market Feasibility Study Results {#market-feasibility-study-results}
+
+TOP 20 African Countries by Overall Assessment
+
+
+
+<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image6.png "image_tooltip")
+
+
+
+
+<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image7.png "image_tooltip")
+
+
+
+## Technology Considerations {#technology-considerations}
+
+ 
+
+
+    -   	Broken down by Project - what is required, what exists, what must be built? 
+
+
+        o   Unbreakable Internet will require consistent, reliable electricity
+
+
+
+* Section must include detailed analysis of power requirements & how we’re going to keep the juice flowing 365/7/24.
+*  ZESCO, renewables (solar?  land?); back up diesel; fuel storage (?); economics of various options?
+
+        o   Nomads, eBanking, Incubator - what are technical requirements?  
+
+
+-	Analysis of existing internet infrastructure and sufficiency for project; what are  \
+		necessary improvements?   Who will undertake?  What is Capex requirement?  \
+
+
+
+        -   	Key element will be integrating technology into existing government functions – including corporate registry, others.  How will this be accomplished?  Are existing ZNZ systems capable of integration?
+
+
+        -   	Section should definitely include screen-shots, diagrams, etc in order to provide tangible description/examples to facilitate understanding by non-technical readers.
+
+
+        -   	Should discuss how projects can be developed concurrently or consecutively – what’s required for each (in particular, whether Unbreakable Internet is required for other projects and how it would be integrated with others if it comes later)
+
+
+        -   	This should be detailed description, but include a succinct Executive Summary at the beginning
+
+ 
+
+
+
+    * Architecture TFGrid
+    * Why can data never be lost
+    * Why can 100% uptime be achieved
+
+
+### Requirements  {#requirements}
+
+
+#### Population density {#population-density}
+
+Decentralised internet deployments follow population distribution. Denser areas require more local capacity (more and larger deployments) while less densely populated areas can have sparser (and smaller deployments).  For the technical design of capacity instances and sizing  population demographics are key drivers.
+
+Categories:
+
+
+
+1. Densely populated (numbers to be defined)
+2. Medium populated (numbers to be defined)
+3. Sparsely populated (numbers to be defined)
+
+
+
+<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image8.png "image_tooltip")
+
+
+<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image9.png "image_tooltip")
+
+
+
+#### Power availability and reliability  {#power-availability-and-reliability}
+
+Power availability is a key technical driver for capacity deployments.  Power availability, quality and reliability are significant drivers for deployments
+
+Categories:
+
+
+
+1. Power type 1: Grid power, 24*7 available grid power + backup facility
+2. Power type 2: Grid power, 24*7 available grid power - no backup facility
+3. Power type 3: Grid power, sporadically available 
+4. Power type 4: No grid power (solar, battery, generator).
+
+The national grid (needs more research) is looking as follows:
+
+​​
+
+<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image10.png "image_tooltip")
+
+
+<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image11.png "image_tooltip")
+
+
+
+#### Composite overview of areas of interest. {#composite-overview-of-areas-of-interest}
+
+Combining the power infrastructure and densely populated ares delivers the following primary areas of interest to consider for deploying decentralized internet capacity.
+
+
+
+<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image12.png "image_tooltip")
+
+
+<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image13.png "image_tooltip")
+
+
+The combination of this information leads to a phased approach for the feasibility study.  These phases look as follows:
+
+
+
+<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/image14.png "image_tooltip")
+
+
+Main focus fof the feasibility study wil be nio the phase1 area, which include the following main islands and cities:
+
+
+
+* Dar Es Salam (7,404,689)
+* Pemba Island (406,808)
+* Morogoro (305,840)
+* Tanga (273,332)
+* Dodoma  (410,956)
+* Zanzibar Island (766, 392)
+
+
+#### Real estate availability and reliability {#real-estate-availability-and-reliability}
+
+A decentralized internet depends on capacity deployments in existing real estate. It uses data centers and telco space for some more densely populated areas but for the other (edge) deployments it requires existing real estate.  Also here deployments follow availability of reliable real estate.  To find appropriate locations of capacity deployments we should identify where:
+
+
+
+* Realestate have utility rooms facilitation power and other utility in the building
+* Reliable power and power backup (if available)
+* Reliable network and network backup (if available)
+
+Based on these criteria we can define technical feasibility for internet capacity deployments based on real estate characteristics availability.
+
+Categories:
+
+
+
+1. Telco grade datacenter or POP (including mobile mast).
+2. Concrete and brick commercial, tower or office building (government, university, school or company owned)
+3. Concrete and brick  Villa / Home  (individually owned)
+4. Other
+
+More detailed information on the rollout is formulated
+
+
+<table>
+  <tr>
+   <td><strong>Priority / Phase</strong>
+   </td>
+   <td><strong>Private/Public sector sites</strong>
+   </td>
+   <td><strong>Community sites</strong>
+   </td>
+  </tr>
+  <tr>
+   <td>1
+   </td>
+   <td>Telco (National and International) sites
+   </td>
+   <td>Edge DC sites
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="2" >2
+   </td>
+   <td>Goverment sites
+   </td>
+   <td rowspan="2" >Colleges / School
+   </td>
+  </tr>
+  <tr>
+   <td>University sites
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="3" >3
+   </td>
+   <td>Airports / Seaports
+   </td>
+   <td rowspan="3" >Homes
+   </td>
+  </tr>
+  <tr>
+   <td>Railway sites
+   </td>
+  </tr>
+  <tr>
+   <td>Waterway sites
+   </td>
+  </tr>
+</table>
+
+
+
+### Deployment types {#deployment-types}
+
+Depending on the demograpics requirements identifies in the previous paragraph we can now defined a number of deployments types that create internet capacity.
+
+
+
+1. Deployment 1: Telco. Rack of equipment that provides
+    1. compute, storage and (local) networking. 
+    2. no backup power infrastructure required
+2. Deployment 2: Real estate 1: Rack of equipment that provides
+    3. compute, storage, local and area networking
+    4. no backup power infrastructure required
+3. Deployment 3: Real estate 2: Rack of equipment that provides
+    5. compute, storage, local and area networking
+    6. backup power infrastructure required
+4. Deployment 4: Home:  Single device in private living space.
+
+Based on the previous technical criteria we would see the following deployment types to be feasible:
+
+
+<table>
+  <tr>
+   <td>
+   </td>
+   <td>Power type
+   </td>
+   <td colspan="4" >
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+<strong>Real Estate Type</strong></p>
+
+   </td>
+   <td>
+   </td>
+   <td><p style="text-align: right">
+1</p>
+
+   </td>
+   <td><p style="text-align: right">
+2</p>
+
+   </td>
+   <td><p style="text-align: right">
+3</p>
+
+   </td>
+   <td><p style="text-align: right">
+4</p>
+
+   </td>
+  </tr>
+  <tr>
+   <td rowspan="4" >
+   </td>
+   <td><p style="text-align: right">
+1</p>
+
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+2</p>
+
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+3</p>
+
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+4</p>
+
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+
+
+<table>
+  <tr>
+   <td><p style="text-align: right">
+Telco deployment</p>
+
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+real estate deployment 1</p>
+
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+real estate deployment 2</p>
+
+   </td>
+   <td>
+   </td>
+  </tr>
+  <tr>
+   <td><p style="text-align: right">
+Home deployment</p>
+
+   </td>
+   <td>
+   </td>
+  </tr>
+</table>
+
+
+Questions Nuro
+
+
+
+* Power:
+    * Can we get recent electricity grid data.
+        * Distribution networks
+        * KWhrs available in areas
+        * KWhrs used  / consumption in areas
+    * Provider companies / prodution sites
+    * Office buildings / operational building  / sites
+* Telco
+    * Wired / Cables
+        * Providers / owners
+        * Insfrastructure grid (cable network)
+        * Fibre / Copper
+        * Pop’s locations and build types
+    * Wireless 
+        * Providers
+        * Infrastructure towers - build types
+        * Office buildings / operational building  / sites
+* 
+* Real Estate 
+    * Federal / Country government Office locations and accessibility
+    * State governent Office locations and build
+    * Towers Commercial Offices
+        * Construction / property development companies?
+    * Towers residential
+    * [Transport sector](https://www.tanzaniainvest.com/transport/tanzania-transport-sector-report-full)
+        * [Railway](https://en.wikipedia.org/wiki/Tanzania_Railways_Limited)
+            * Not elextrified
+        * Bus network infrastructure
+        * [Oil pipe infrastructure ](https://en.wikipedia.org/wiki/East_African_Crude_Oil_Pipeline)
+        * Airports (Tanzania has four international airports in Dar es Salaam, Zanzibar, Kilimanjaro, and, more recently, Mwanza.
+        * Sea ports. Tanzania maritime transport revolves around its major sea ports, which are Dar es Salaam, Tanga and Mtwara, all managed and operated by Tanzania Ports Authority (TPA).
+    * [Universities](https://en.wikipedia.org/wiki/List_of_universities_and_colleges_in_Tanzania)
+    * Secondary Schools (large)
+    * Commercial malls
+    * VI
+
+
+## Operational Feasibility {#operational-feasibility}
+
+Operations – Global; Local (land availability, proposed locations for servers)
+
+
+
+*  
+* o   Global Team
+* -  Management structure; organogram
+* -  Personnel
+* -  Finance & Budget
+* 
+* o   Local (ZNZ)
+* -  Footprint – HQ location, management, staff
+* -  Responsibilities (vis-à-vis Global Team)        
+
+
+
+* 
+
+
+
+* TNZ Deployment
+    * Requirements for locations (map some maps)
+    * Locations, …
+    * Link between m2 land & generator or power feed
+    * Connectivity
+        * Link to other projects e/g. Fiber backend
+        * Link to telcos
+    * Deployment Specs (Kristof)
+        * Explain the 3 options how it can be deployed (2-3 pages), explain pros and cons for each 
+        * More detailed specs container version (kristof, 5-8 pages)
+        * Calculations Container (kristof, 2 pages)
+    * Link to other projects like … also working in TNZ/ZNZ 	
+        * https://bluetown.com/
+* 
+* Financial Feasibility
+* Business Model – value proposition, sustainability; stress value to individuals, government
+* o   <span style="text-decoration:underline;">Digital Nomads</span>
+* -  Massive market – pandemic upended the way we think about work/life balance; conflict has accelerated the world’s increasing intransigence; millions of people – and their businesses – are on the move.
+* -  As a result, they have challenges (e.g., no residence for underwriting  \
+   purposes, confusion about tax), and would benefit from:
+* ·  	ease of company registration,
+* ·  	smart contracts,
+* ·  	a single monthly subscription gets access to services (bookkeeping, accounting, contracts, software, etc.)
+* ·  	tax incentives [0-5% income tax],
+* ·  	transparency = accountability
+* ·  	community validation,
+* ·  	reliable dispute resolution,
+* ·  	facilitated access to e-banking (?)
+* -  Significant source of revenue to government
+* ·  	Collect regular monthly fee
+* ·  	Virtually no impact on resources (land, environment, \
+	personnel)
+* ·  	Increased local capacity; improve service delivery
+* 
+* o   <span style="text-decoration:underline;">e-Banking Hub</span>
+* -  facilitate license for e-Banking entities within the ZDFZ,
+* -  provide software backbone for e-Banking platform
+* -  provide easy access to e-Banking for other ZDFZ entities, nomads
+* -  revenue model [TBD?]
+*  
+* o   <span style="text-decoration:underline;">Unbreakable Internet</span>
+* -  Data Sovereignty
+* -  Income generation
+* -  Security, reliability
+* -  Data as a Valuable Resource – to be monetized by citizens, govt
+* ·  Examples – healthcare, agriculture, tourism
+*  
+* o   <span style="text-decoration:underline;">Incubator</span> – contributes to sustainability of all projects
+* -  value of products/apps/new tech to individual citizens & overall  \
+   economy
+* -  job creation; technology transfer
+* -  unlock power of the digital marketplace
+* -  growth across the board – education, healthcare, agriculture
+* -  driven by local conditions, talent and resources – key to sustainability.
+* Project Financial Model
+* o   Key Assumptions
+* -  commercial agreement between TF and GoZ includes 50/50 revenue  \
+   share
+* ·  QUERY:  do we want to propose 75/25 until TF investment is  \
+  repaid?
+* ·  Include Term Sheet with FS?
+* -  favorable tax treatment for ThreeFold (i.e., tax free operation in first 5  \
+   yrs?)
+* o   Will Require Financial Model for each individual project as well as for projects  \
+     together on aggregated basis
+*  
+* -   	Investment Strategy
+* o   Funding for initial stages (staff, local presence, legal, FS prep) by TF;
+* o   Additional funding to come from equity raise
+* -  Identified $[XXm] of capital available for investment upon signature of     \
+  [Concession Agreement] with GoZ
+* -  Plans for raise
+
+
+
+* 
+Economics the new internet (Kristof)
+
+
+    * Why tokens = CHI
+* Internet Economics (Kristof)
+    * Cost per user
+    * Power Usage
+    * …
+
+
+## 
+
+
+## Legal/Regulatory Compliance {#legal-regulatory-compliance}
+
+ 
+
+
+    -   	Description of Legal/Regulatory Context (ZNZ – TZ relationship; duties &  \
+	responsibilities)
+
+
+    -   	Specific Legal / Regulatory Framework for each element of the various projects.
+
+
+    -   	Identify Responsible ministries; authorities
+
+
+    -   	Where there is potential conflict – how to mitigate, modalities of each
+
+
+        `o`   Interpretation (with GoZ confirmation of interpretation)
+
+
+        `o`   Executive action
+
+
+        `o`   Legislative action
+
+
+    -   	Consolidated list of requirements; provide Annex w proposed changes/language
+
+
+## 
+
+
+## Risk Factors & Mitigation {#risk-factors-&-mitigation}
+
+           
+
+
+    -	Additional risks (mitigation measures) to be developed during FS prep; to start:   	
+
+
+        `O `Theft of equipment (redundancy, planning)
+
+
+        `O `Lack of land availability (survey, letters of intent?)
+
+
+        `O `Failure to obtain permits, licenses (govt to assist)
+
+
+    `O `Content – illegal, immoral, political (no anonymity, GoZ/GoTZ monitoring)
+
+
+    `O `Lack of uptake (digital marketing, flexibility)
+
+
+    `O `Misuse – e.g., money laundering, criminal activity (KYC/AML diligence, no  \
+	     anonymity)
+
+
+
+
+## Schedule {#schedule}
+
+ 
+
+
+    -   	Notional implementation schedule – keyed off of signature of Concession \
+ 	Agreement.
+
+ 
