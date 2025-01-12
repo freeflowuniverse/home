@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Page not found - Tanzania feasibility study</title>
+        <title></title>
         <base href="/">
 
 
@@ -82,7 +82,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Frontpage</a></li><li class="chapter-item expanded "><a href="executive_summary.html"><strong aria-hidden="true">2.</strong> Executive Summary (include the WHY)</a></li><li class="chapter-item expanded "><a href="project_description.html"><strong aria-hidden="true">3.</strong> Description of the Project</a></li><li class="chapter-item expanded "><a href="market_assessment_and_strategy.html"><strong aria-hidden="true">4.</strong> Market Assessment and Strategy</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="current_economic_landscape.html"><strong aria-hidden="true">4.1.</strong> Current Economic Landscape</a></li><li class="chapter-item expanded "><a href="economic_empowerment.html"><strong aria-hidden="true">4.2.</strong> Economic Empowerment</a></li><li class="chapter-item expanded "><a href="social_impact.html"><strong aria-hidden="true">4.3.</strong> Social Impact</a></li><li class="chapter-item expanded "><a href="methodology.html"><strong aria-hidden="true">4.4.</strong> Methodology</a></li><li class="chapter-item expanded "><a href="market_feasibility.html"><strong aria-hidden="true">4.5.</strong> Market Feasibility</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="market_feasibility_criteria.html"><strong aria-hidden="true">4.5.1.</strong> Market Feasibility Study Criteria</a></li><li class="chapter-item expanded "><a href="market_feasibility_results.html"><strong aria-hidden="true">4.5.2.</strong> Market Feasibility Study Results</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="technology_considerations.html"><strong aria-hidden="true">5.</strong> Technology Considerations</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="technical_requirements.html"><strong aria-hidden="true">5.1.</strong> Requirements</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="requirements_population_density.html"><strong aria-hidden="true">5.1.1.</strong> Population density</a></li><li class="chapter-item expanded "><a href="requirements_power.html"><strong aria-hidden="true">5.1.2.</strong> Power availability and reliability</a></li><li class="chapter-item expanded "><a href="requirements_composite.html"><strong aria-hidden="true">5.1.3.</strong> Composite overview of areas of interest</a></li><li class="chapter-item expanded "><a href="realestate_options.html"><strong aria-hidden="true">5.1.4.</strong> Real estate availability and reliability</a></li></ol></li><li class="chapter-item expanded "><a href="deployment_types.html"><strong aria-hidden="true">5.2.</strong> Deployment types</a></li></ol></li><li class="chapter-item expanded "><a href="operational_feasibility.html"><strong aria-hidden="true">6.</strong> Operational Feasibility</a></li><li class="chapter-item expanded "><a href="not_done.html"><strong aria-hidden="true">7.</strong> Financial Feasibility</a></li><li class="chapter-item expanded "><a href="legal_compliance.html"><strong aria-hidden="true">8.</strong> Legal/Regulatory Compliance</a></li><li class="chapter-item expanded "><a href="risk_factors.html"><strong aria-hidden="true">9.</strong> Risk Factors & Mitigation</a></li><li class="chapter-item expanded "><a href="schedule.html"><strong aria-hidden="true">10.</strong> Schedule</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="html.html"><strong aria-hidden="true">1.</strong> html</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="spreadsheet.html"><strong aria-hidden="true">1.1.</strong> spreadsheet</a></li><li class="chapter-item expanded "><a href="chartjs.html"><strong aria-hidden="true">1.2.</strong> chartjs</a></li><li class="chapter-item expanded "><a href="rawgraphs-charts.html"><strong aria-hidden="true">1.3.</strong> rawgraphs-charts</a></li><li class="chapter-item expanded "><a href="chart.html"><strong aria-hidden="true">1.4.</strong> chart</a></li><li class="chapter-item expanded "><a href="gridjs.html"><strong aria-hidden="true">1.5.</strong> gridjs</a></li><li class="chapter-item expanded "><a href="jexcel.html"><strong aria-hidden="true">1.6.</strong> jexcel</a></li><li class="chapter-item expanded "><a href="tailwind.html"><strong aria-hidden="true">1.7.</strong> tailwind</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -165,9 +165,7 @@
 
         <!-- Livereload script (if served using the cli tool) -->
         <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
             socket.onmessage = function (event) {
                 if (event.data === "reload") {
                     socket.close();
