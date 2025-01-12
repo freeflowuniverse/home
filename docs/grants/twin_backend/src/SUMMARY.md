@@ -1,7 +1,7 @@
 # Summary
 
 - [Intro](./intro.md)
-- [Mission](./mission.md)
+- [Mission](mission/mission.md)
 - [Purpose](purpose.md)
 - [Architecture](architecture/architecture.md)
     - [Twins](architecture/twins.md)
